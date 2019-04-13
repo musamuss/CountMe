@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Instat
+//  Instagram
 //
-//  Created by Муса Дениев on 02/04/2019.
-//  Copyright © 2019 our team. All rights reserved.
+//  Created by Игорь Силаев on 13/04/2019.
+//  Copyright © 2019 Игорь Силаев. All rights reserved.
 //
 
 import UIKit
