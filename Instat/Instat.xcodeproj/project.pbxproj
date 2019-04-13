@@ -12,7 +12,7 @@
 		5B95BB2F2252D0CC0026D9E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B95BB2D2252D0CC0026D9E1 /* Main.storyboard */; };
 		5B95BB312252D0D00026D9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B95BB302252D0D00026D9E1 /* Assets.xcassets */; };
 		5B95BB342252D0D00026D9E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B95BB322252D0D00026D9E1 /* LaunchScreen.storyboard */; };
-		5B95BB3E2252D6E40026D9E1 /* house-icon-png-white-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B95BB3D2252D6E40026D9E1 /* house-icon-png-white-32.png */; };
+		E6E12CD36128EF945EF5ED26 /* Pods_Instat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B297580CD593E52E28958DE /* Pods_Instat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,9 @@
 		5B95BB302252D0D00026D9E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B95BB332252D0D00026D9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B95BB352252D0D00026D9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B95BB3D2252D6E40026D9E1 /* house-icon-png-white-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "house-icon-png-white-32.png"; sourceTree = "<group>"; };
+		6B297580CD593E52E28958DE /* Pods_Instat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1A1FC2F07BF978A4B0B58E /* Pods-Instat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instat.release.xcconfig"; path = "Target Support Files/Pods-Instat/Pods-Instat.release.xcconfig"; sourceTree = "<group>"; };
+		FEE397BA3ECE5B00D47D7525 /* Pods-Instat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instat.debug.xcconfig"; path = "Target Support Files/Pods-Instat/Pods-Instat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E12CD36128EF945EF5ED26 /* Pods_Instat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +45,8 @@
 			children = (
 				5B95BB282252D0CC0026D9E1 /* Instat */,
 				5B95BB272252D0CC0026D9E1 /* Products */,
-				5B95BB3D2252D6E40026D9E1 /* house-icon-png-white-32.png */,
+				E510466182488055E9BE68B2 /* Pods */,
+				F7163278F613163CE8DA8C29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +71,23 @@
 			path = Instat;
 			sourceTree = "<group>";
 		};
+		E510466182488055E9BE68B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEE397BA3ECE5B00D47D7525 /* Pods-Instat.debug.xcconfig */,
+				AD1A1FC2F07BF978A4B0B58E /* Pods-Instat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7163278F613163CE8DA8C29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B297580CD593E52E28958DE /* Pods_Instat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B95BB382252D0D00026D9E1 /* Build configuration list for PBXNativeTarget "Instat" */;
 			buildPhases = (
+				088934033562343A492C46CB /* [CP] Check Pods Manifest.lock */,
 				5B95BB222252D0CC0026D9E1 /* Sources */,
 				5B95BB232252D0CC0026D9E1 /* Frameworks */,
 				5B95BB242252D0CC0026D9E1 /* Resources */,
+				62D4186F12FED40EFC7A7F84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,12 +150,58 @@
 			files = (
 				5B95BB342252D0D00026D9E1 /* LaunchScreen.storyboard in Resources */,
 				5B95BB312252D0D00026D9E1 /* Assets.xcassets in Resources */,
-				5B95BB3E2252D6E40026D9E1 /* house-icon-png-white-32.png in Resources */,
 				5B95BB2F2252D0CC0026D9E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088934033562343A492C46CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62D4186F12FED40EFC7A7F84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instat/Pods-Instat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instat/Pods-Instat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B95BB222252D0CC0026D9E1 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		5B95BB392252D0D00026D9E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE397BA3ECE5B00D47D7525 /* Pods-Instat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +371,7 @@
 		};
 		5B95BB3A2252D0D00026D9E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1A1FC2F07BF978A4B0B58E /* Pods-Instat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

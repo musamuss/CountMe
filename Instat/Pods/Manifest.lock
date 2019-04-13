@@ -1,0 +1,18 @@
+PODS:
+  - SwiftInstagram (1.1.2):
+    - SwiftInstagram/Core (= 1.1.2)
+  - SwiftInstagram/Core (1.1.2)
+
+DEPENDENCIES:
+  - SwiftInstagram (~> 1.1.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftInstagram
+
+SPEC CHECKSUMS:
+  SwiftInstagram: 1579fd6ffb294de557bc47deddbe719fde6e2058
+
+PODFILE CHECKSUM: 32a4a37c37ab4ea1e06d138ac7bfe39c1126def5
+
+COCOAPODS: 1.6.1
