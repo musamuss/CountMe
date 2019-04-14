@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/igoryasha/Documents/Xcode_projects/Instagram/Instat.xcodeproj">
+      location = "group:Instat.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
