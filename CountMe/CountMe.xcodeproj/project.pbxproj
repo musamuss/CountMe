@@ -12,9 +12,12 @@
 		451051CF226A0C86009318B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451051CD226A0C86009318B2 /* Main.storyboard */; };
 		451051D1226A0C88009318B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451051D0226A0C88009318B2 /* Assets.xcassets */; };
 		451051D4226A0C88009318B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451051D2226A0C88009318B2 /* LaunchScreen.storyboard */; };
+		723381D4388879030DD6B18F /* Pods_CountMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F856ED347708DE5ED4718947 /* Pods_CountMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162616108EFF9702AEC1A991 /* Pods-CountMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountMe.debug.xcconfig"; path = "Target Support Files/Pods-CountMe/Pods-CountMe.debug.xcconfig"; sourceTree = "<group>"; };
+		16E74BF17FD2259D0770857A /* Pods-CountMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountMe.release.xcconfig"; path = "Target Support Files/Pods-CountMe/Pods-CountMe.release.xcconfig"; sourceTree = "<group>"; };
 		451051C6226A0C86009318B2 /* CountMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451051C9226A0C86009318B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		451051CB226A0C86009318B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		451051D0226A0C88009318B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451051D3226A0C88009318B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451051D5226A0C88009318B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F856ED347708DE5ED4718947 /* Pods_CountMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				723381D4388879030DD6B18F /* Pods_CountMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				451051C8226A0C86009318B2 /* CountMe */,
 				451051C7226A0C86009318B2 /* Products */,
+				80A7ACF63AA105C5C4D96E50 /* Pods */,
+				4EAC4C3511010C5804E5FA08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = CountMe;
 			sourceTree = "<group>";
 		};
+		4EAC4C3511010C5804E5FA08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F856ED347708DE5ED4718947 /* Pods_CountMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80A7ACF63AA105C5C4D96E50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				162616108EFF9702AEC1A991 /* Pods-CountMe.debug.xcconfig */,
+				16E74BF17FD2259D0770857A /* Pods-CountMe.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451051D8226A0C88009318B2 /* Build configuration list for PBXNativeTarget "CountMe" */;
 			buildPhases = (
+				5D55F5C660618EA8DD515470 /* [CP] Check Pods Manifest.lock */,
 				451051C2226A0C86009318B2 /* Sources */,
 				451051C3226A0C86009318B2 /* Frameworks */,
 				451051C4226A0C86009318B2 /* Resources */,
+				5D1E6AAE8599E03238A62A48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D1E6AAE8599E03238A62A48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CountMe/Pods-CountMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyInsta/SwiftyInsta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyInsta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CountMe/Pods-CountMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D55F5C660618EA8DD515470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CountMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		451051C2226A0C86009318B2 /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		451051D9226A0C88009318B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 162616108EFF9702AEC1A991 /* Pods-CountMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		451051DA226A0C88009318B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E74BF17FD2259D0770857A /* Pods-CountMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

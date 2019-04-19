@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyInsta (0.0.4)
+
+DEPENDENCIES:
+  - SwiftyInsta
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftyInsta
+
+SPEC CHECKSUMS:
+  SwiftyInsta: 69ace49d80973dc5d4275048e78fed1666548ae9
+
+PODFILE CHECKSUM: 1cd27232e9c6fda9589ff3af4087aaf354bc9cda
+
+COCOAPODS: 1.6.1
