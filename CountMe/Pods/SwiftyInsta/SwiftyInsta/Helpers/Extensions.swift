@@ -40,7 +40,7 @@ extension Array where Element: HTTPCookie {
     }
     
     func getInstagramCookies() -> [HTTPCookie]? {
-        if let cookies = try? HTTPCookieStorage.shared.cookies(for: URLs.getInstagramCookieUrl()) {
+        if let cookies = ((try? HTTPCookieStorage.shared.cookies(for: URLs.getInstagramCookieUrl())) as [HTTPCookie]??) {
             return cookies
         }
         

@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import SwiftyInsta
-
+//import SwiftyInsta
 class ViewController: UIViewController {
     
     @IBOutlet weak var lel: UILabel!
     
     
-    override func viewDidLoad() {
+  /*  override func viewDidLoad() {
         super.viewDidLoad()
         let ruserok1 = SessionStorage.create(username: "vwxwgrvu", password: "b9NkHmsf")
         let userAgent = CustomUserAgent(apiVersion: "79.0.0.0", osName: "iOS", osVersion: "12", osRelease: "1.4", dpi: "458", resolution: "2688x1242", company: "Apple", model: "iPhone11,2", modem: "intel", locale: "en_US", fbCode: "95414346")
@@ -29,10 +28,10 @@ class ViewController: UIViewController {
                 print("[-] Login failed: \(result.info.error)")
             }
         }
-
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    */
+   
+    }
+    
 
-
-}
 

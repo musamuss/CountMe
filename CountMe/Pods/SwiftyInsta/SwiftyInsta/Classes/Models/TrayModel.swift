@@ -103,7 +103,7 @@ public struct TrayModel: Codable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        if let value = try? container.decodeIfPresent(Int.self, forKey: .id) {
+        if let value = ((try? container.decodeIfPresent(Int.self, forKey: .id)) as Int??) {
             if let value = value {
                 id = String(value)
             } else {
@@ -146,7 +146,7 @@ public struct OwnerModel: Codable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        if let value = try? container.decodeIfPresent(Int.self, forKey: .pk) {
+        if let value = ((try? container.decodeIfPresent(Int.self, forKey: .pk)) as Int??) {
             if value != nil {
                 pk = String(value!)
             } else {

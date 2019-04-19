@@ -117,7 +117,7 @@
 		1EE2D9ECB1F0C0FF75045E9225CDFEBA /* CaptionModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptionModel.swift; path = SwiftyInsta/Classes/Models/CaptionModel.swift; sourceTree = "<group>"; };
 		1FE27523B8F7A5DB6D3D7BE1AF96BC3C /* MediaLikersModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaLikersModel.swift; path = SwiftyInsta/Classes/Models/MediaLikersModel.swift; sourceTree = "<group>"; };
 		1FE2A63D99FFA2F03712205E21116227 /* SessionStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionStorage.swift; path = SwiftyInsta/Classes/Models/SessionStorage.swift; sourceTree = "<group>"; };
-		21A7A177692F2BA7A2675013A0509593 /* SwiftyInsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyInsta.framework; path = SwiftyInsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A7A177692F2BA7A2675013A0509593 /* SwiftyInsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyInsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C49D9B53308E7F4647E599E6B768F1 /* ResultInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultInfo.swift; path = SwiftyInsta/Classes/Models/ResultInfo.swift; sourceTree = "<group>"; };
 		21D432EE1F37F8AE0B12986F700FA697 /* UserShortModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserShortModel.swift; path = SwiftyInsta/Classes/Models/UserShortModel.swift; sourceTree = "<group>"; };
 		24CC3B2F9079220F2BD9E0BF8D628218 /* TrayModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrayModel.swift; path = SwiftyInsta/Classes/Models/TrayModel.swift; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		993064EBD74FD8F0108D15E7DCA1C39C /* NameTagModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameTagModel.swift; path = SwiftyInsta/Classes/Models/NameTagModel.swift; sourceTree = "<group>"; };
 		9AF16EE2E6A2D581FE3D735EACDB871E /* ProfilePrivacyResponseModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfilePrivacyResponseModel.swift; path = SwiftyInsta/Classes/Models/ProfilePrivacyResponseModel.swift; sourceTree = "<group>"; };
 		9D50B83E21BBCBDE6CDE501BE8E9908A /* TagFeedModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagFeedModel.swift; path = SwiftyInsta/Classes/Models/TagFeedModel.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ECB0584E48A3C9CB84F257E62F3606C /* Pods-CountMe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CountMe-acknowledgements.plist"; sourceTree = "<group>"; };
 		A015D2089A10C3A0E399A1BD156C196F /* UserFeedModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserFeedModel.swift; path = SwiftyInsta/Classes/Models/UserFeedModel.swift; sourceTree = "<group>"; };
 		A4FF58C8B5CAEBFBDA792220CD683FFF /* CommentModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentModel.swift; path = SwiftyInsta/Classes/Models/CommentModel.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		BD042CB6550478851399B6A48E7699CC /* HttpSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpSettings.swift; path = SwiftyInsta/Helpers/HttpSettings.swift; sourceTree = "<group>"; };
 		BD93DDDE6DF9FAE59BC5715CD89D0833 /* CommentHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommentHandler.swift; path = SwiftyInsta/API/Services/CommentHandler.swift; sourceTree = "<group>"; };
 		BFE8A1F153264E2EF08D02CF4BA6040E /* MediaHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaHandler.swift; path = SwiftyInsta/API/Services/MediaHandler.swift; sourceTree = "<group>"; };
-		C06204642173CABE148AF5ECF89F89D7 /* Pods_CountMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CountMe.framework; path = "Pods-CountMe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06204642173CABE148AF5ECF89F89D7 /* Pods_CountMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C066238FCFB41434D0FC2A459A7BF981 /* MessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageHandler.swift; path = SwiftyInsta/API/Services/MessageHandler.swift; sourceTree = "<group>"; };
 		C7307FC9D107112F6977D4EDA2921D44 /* SessionCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionCache.swift; path = SwiftyInsta/Classes/Models/SessionCache.swift; sourceTree = "<group>"; };
 		C7C547E754FA6EA7AD6524873A7D4F04 /* VerifyTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyTypes.swift; path = SwiftyInsta/Classes/Enums/VerifyTypes.swift; sourceTree = "<group>"; };
@@ -303,7 +303,6 @@
 				81C15A16805513D56F9A698023AAF271 /* VideoVersionModel.swift */,
 				AD5A37F6284EB320FF4BD657DCD4F7A2 /* Support Files */,
 			);
-			name = SwiftyInsta;
 			path = SwiftyInsta;
 			sourceTree = "<group>";
 		};
@@ -459,14 +458,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					030D1F01D0A5DDBE36D352F624642E5F = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 5A3F9AE3DF110155E17570B140FCDB98 /* Products */;
@@ -628,7 +633,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -665,7 +670,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -676,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -736,6 +742,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
