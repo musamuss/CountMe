@@ -1,6 +1,0 @@
-framework module SwiftyInsta {
-  umbrella header "SwiftyInsta-umbrella.h"
-
-  export *
-  module * { export * }
-}
