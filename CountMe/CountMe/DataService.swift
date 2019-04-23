@@ -119,21 +119,21 @@ class DataService {
 
         switch summedEngagementArray[0].1 {
         case Weekday.sunday.rawValue:
-            return NSLocalizedString("Sunday.", comment: "")
+            return NSLocalizedString("Воскресенье.", comment: "")
         case Weekday.monday.rawValue:
-            return NSLocalizedString("Monday.", comment: "")
+            return NSLocalizedString("Понедельник.", comment: "")
         case Weekday.tuesday.rawValue:
-            return NSLocalizedString("Tuesday.", comment: "")
+            return NSLocalizedString("Вторник.", comment: "")
         case Weekday.wednesday.rawValue:
-            return NSLocalizedString("Wednesday.", comment: "")
+            return NSLocalizedString("Среда.", comment: "")
         case Weekday.thursday.rawValue:
-            return NSLocalizedString("Thursday.", comment: "")
+            return NSLocalizedString("Четверг.", comment: "")
         case Weekday.friday.rawValue:
-            return NSLocalizedString("Friday.", comment: "")
+            return NSLocalizedString("Пятница.", comment: "")
         case Weekday.saturday.rawValue:
-            return NSLocalizedString("Saturday.", comment: "")
+            return NSLocalizedString("Суббота.", comment: "")
         default:
-            return NSLocalizedString("Weekday.", comment: "")
+            return NSLocalizedString("День.", comment: "")
         }
     }
     
