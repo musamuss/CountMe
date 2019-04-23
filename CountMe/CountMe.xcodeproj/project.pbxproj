@@ -12,7 +12,21 @@
 		451051CF226A0C86009318B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451051CD226A0C86009318B2 /* Main.storyboard */; };
 		451051D1226A0C88009318B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451051D0226A0C88009318B2 /* Assets.xcassets */; };
 		451051D4226A0C88009318B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451051D2226A0C88009318B2 /* LaunchScreen.storyboard */; };
-		5B2C3374226A7D18005A3F2F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2C3373226A7D18005A3F2F /* AccountViewController.swift */; };
+		5B1349CE226F79BB002CE3D1 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349CD226F79B9002CE3D1 /* AppConfiguration.swift */; };
+		5B1349D1226F7B2B002CE3D1 /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349CF226F7B2A002CE3D1 /* AppExtensions.swift */; };
+		5B1349D2226F7B2B002CE3D1 /* AppUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349D0226F7B2A002CE3D1 /* AppUserAccount.swift */; };
+		5B1349D4226F7BD3002CE3D1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349D3226F7BD3002CE3D1 /* DataService.swift */; };
+		5B1349D6226F7C13002CE3D1 /* InstagramAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349D5226F7C12002CE3D1 /* InstagramAPI.swift */; };
+		5B1349D8226F7C36002CE3D1 /* InstagramMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349D7226F7C36002CE3D1 /* InstagramMedia.swift */; };
+		5B1349DF226F7D7B002CE3D1 /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349D9226F7D74002CE3D1 /* InsightsViewController.swift */; };
+		5B1349E0226F7D7C002CE3D1 /* InstagramMediaSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349DB226F7D76002CE3D1 /* InstagramMediaSectionTableViewCell.swift */; };
+		5B1349E1226F7D7C002CE3D1 /* InstagramMediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349DC226F7D76002CE3D1 /* InstagramMediaCollectionViewCell.swift */; };
+		5B1349E2226F7D7C002CE3D1 /* InsightsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349DD226F7D77002CE3D1 /* InsightsInteractor.swift */; };
+		5B1349E3226F7D7C002CE3D1 /* InsightsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349DE226F7D79002CE3D1 /* InsightsPresenter.swift */; };
+		5B1349E9226F7DE8002CE3D1 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E5226F7DE1002CE3D1 /* AddAccountViewController.swift */; };
+		5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */; };
+		5B1349EB226F7DE9002CE3D1 /* AddAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */; };
+		5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */; };
 		723381D4388879030DD6B18F /* Pods_CountMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F856ED347708DE5ED4718947 /* Pods_CountMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +40,21 @@
 		451051D0226A0C88009318B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451051D3226A0C88009318B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451051D5226A0C88009318B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B2C3373226A7D18005A3F2F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5B1349CD226F79B9002CE3D1 /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		5B1349CF226F7B2A002CE3D1 /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		5B1349D0226F7B2A002CE3D1 /* AppUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserAccount.swift; sourceTree = "<group>"; };
+		5B1349D3226F7BD3002CE3D1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5B1349D5226F7C12002CE3D1 /* InstagramAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramAPI.swift; sourceTree = "<group>"; };
+		5B1349D7226F7C36002CE3D1 /* InstagramMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramMedia.swift; sourceTree = "<group>"; };
+		5B1349D9226F7D74002CE3D1 /* InsightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
+		5B1349DB226F7D76002CE3D1 /* InstagramMediaSectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramMediaSectionTableViewCell.swift; sourceTree = "<group>"; };
+		5B1349DC226F7D76002CE3D1 /* InstagramMediaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramMediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		5B1349DD226F7D77002CE3D1 /* InsightsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsInteractor.swift; sourceTree = "<group>"; };
+		5B1349DE226F7D79002CE3D1 /* InsightsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightsPresenter.swift; sourceTree = "<group>"; };
+		5B1349E5226F7DE1002CE3D1 /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountPresenter.swift; sourceTree = "<group>"; };
+		5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountInteractor.swift; sourceTree = "<group>"; };
+		5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		F856ED347708DE5ED4718947 /* Pods_CountMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -65,7 +93,17 @@
 			children = (
 				451051C9226A0C86009318B2 /* AppDelegate.swift */,
 				451051CB226A0C86009318B2 /* ViewController.swift */,
-				5B2C3373226A7D18005A3F2F /* AccountViewController.swift */,
+				5B1349E4226F7DE1002CE3D1 /* Account */,
+				5B1349CD226F79B9002CE3D1 /* AppConfiguration.swift */,
+				5B1349CF226F7B2A002CE3D1 /* AppExtensions.swift */,
+				5B1349D0226F7B2A002CE3D1 /* AppUserAccount.swift */,
+				5B1349D7226F7C36002CE3D1 /* InstagramMedia.swift */,
+				5B1349D3226F7BD3002CE3D1 /* DataService.swift */,
+				5B1349D5226F7C12002CE3D1 /* InstagramAPI.swift */,
+				5B1349DD226F7D77002CE3D1 /* InsightsInteractor.swift */,
+				5B1349DE226F7D79002CE3D1 /* InsightsPresenter.swift */,
+				5B1349D9226F7D74002CE3D1 /* InsightsViewController.swift */,
+				5B1349DA226F7D76002CE3D1 /* Views */,
 				451051CD226A0C86009318B2 /* Main.storyboard */,
 				451051D0226A0C88009318B2 /* Assets.xcassets */,
 				451051D2226A0C88009318B2 /* LaunchScreen.storyboard */,
@@ -80,6 +118,26 @@
 				F856ED347708DE5ED4718947 /* Pods_CountMe.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B1349DA226F7D76002CE3D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B1349DB226F7D76002CE3D1 /* InstagramMediaSectionTableViewCell.swift */,
+				5B1349DC226F7D76002CE3D1 /* InstagramMediaCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B1349E4226F7DE1002CE3D1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				5B1349E5226F7DE1002CE3D1 /* AddAccountViewController.swift */,
+				5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */,
+				5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */,
+				5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		80A7ACF63AA105C5C4D96E50 /* Pods */ = {
@@ -224,9 +282,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1349D2226F7B2B002CE3D1 /* AppUserAccount.swift in Sources */,
+				5B1349D4226F7BD3002CE3D1 /* DataService.swift in Sources */,
+				5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */,
+				5B1349D1226F7B2B002CE3D1 /* AppExtensions.swift in Sources */,
 				451051CC226A0C86009318B2 /* ViewController.swift in Sources */,
 				451051CA226A0C86009318B2 /* AppDelegate.swift in Sources */,
-				5B2C3374226A7D18005A3F2F /* AccountViewController.swift in Sources */,
+				5B1349D8226F7C36002CE3D1 /* InstagramMedia.swift in Sources */,
+				5B1349E1226F7D7C002CE3D1 /* InstagramMediaCollectionViewCell.swift in Sources */,
+				5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */,
+				5B1349E9226F7DE8002CE3D1 /* AddAccountViewController.swift in Sources */,
+				5B1349E3226F7D7C002CE3D1 /* InsightsPresenter.swift in Sources */,
+				5B1349D6226F7C13002CE3D1 /* InstagramAPI.swift in Sources */,
+				5B1349DF226F7D7B002CE3D1 /* InsightsViewController.swift in Sources */,
+				5B1349CE226F79BB002CE3D1 /* AppConfiguration.swift in Sources */,
+				5B1349E0226F7D7C002CE3D1 /* InstagramMediaSectionTableViewCell.swift in Sources */,
+				5B1349E2226F7D7C002CE3D1 /* InsightsInteractor.swift in Sources */,
+				5B1349EB226F7DE9002CE3D1 /* AddAccountInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = abc.CountMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -402,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = abc.CountMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

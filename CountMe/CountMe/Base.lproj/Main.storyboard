@@ -65,7 +65,7 @@
         <!--Insights View Controller-->
         <scene sceneID="Ebg-CE-YmG">
             <objects>
-                <tableViewController id="xwD-e2-JY2" customClass="InsightsViewController" customModule="insights_for_instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="xwD-e2-JY2" customClass="InsightsViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gsd-8G-CuO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,7 +192,7 @@
         <!--Account-->
         <scene sceneID="Tvy-qp-baG">
             <objects>
-                <tableViewController id="Bhu-Bn-CkK" customClass="AccountViewController" customModule="insights_for_instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Bhu-Bn-CkK" customClass="AccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3js-w7-gGD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@
         <!--Account-->
         <scene sceneID="4Se-zx-4NH">
             <objects>
-                <viewController title="Account" hidesBottomBarWhenPushed="YES" id="FQt-a7-1Ut" customClass="AddAccountViewController" customModule="insights_for_instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Account" hidesBottomBarWhenPushed="YES" id="FQt-a7-1Ut" customClass="AddAccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vvy-Dj-R8Z"/>
                         <viewControllerLayoutGuide type="bottom" id="Wvd-yY-pFs"/>

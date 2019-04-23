@@ -9,8 +9,7 @@
 import UIKit
 //import SwiftyInsta
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var lel: UILabel!
+  
     
     
   /*  override func viewDidLoad() {
