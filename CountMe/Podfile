@@ -10,7 +10,6 @@ target 'CountMe' do
   pod 'RealmSwift'
   pod 'ObjectMapper'
   pod 'Kingfisher', '~> 4.0'
-  pod 'SwiftLint'
 
   # Pods for CountMe
 
