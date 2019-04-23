@@ -32,7 +32,7 @@ public enum Instagram {
 }
 
 extension Instagram: TargetType {
-    public var baseURL: URL { return URL(string: Constant.baseURL)! } // swiftlint:disable:this force_unwrapping
+    public var baseURL: URL { return URL(string: Constant.baseURL)! }
     public var path: String {
         switch self {
         case .userMedia(let name):

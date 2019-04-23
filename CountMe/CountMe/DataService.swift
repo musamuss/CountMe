@@ -93,7 +93,6 @@ class DataService {
     }
     
     // Weekday
-    // swiftlint:disable:next cyclomatic_complexity
     static func weekday() -> String {
         
         guard let realm = try? Realm() else { return "" }
