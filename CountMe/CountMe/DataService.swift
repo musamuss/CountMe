@@ -15,7 +15,7 @@ class DataService {
     static func media( for userName: String, completion: @escaping ( _ error: String?) -> Void) {
         InstagramProvider.request(.userMedia(userName)) { result in
             do {
-                let response = try result.dematerialize()
+                let response = try result.get()
                 let value: [String: Any] = try response.mapNSArray()
                 guard let items = value["data"] as? [[String: Any]], items.isEmpty == false else {
                 completion(AppConfiguration.Messages.privateAccountMessage)
@@ -31,7 +31,7 @@ class DataService {
         }
     }
     
-    // Creates/updates media
+    // Обговить медиа
     static func importInstagramMedia(instagramMedia: [[String: Any]], completion: @escaping () -> Void) {
         DispatchQueue.global().async {
             guard let realm = try? Realm() else { return }
@@ -49,9 +49,9 @@ class DataService {
         }
     }
     
-    // Returns the top n most liked
+    // Вернуть топ коментированных фото
     static func mostLiked (with limit: Int ) -> [InstagramMedia] {
-        // paginating behavior isn’t necessary at all: https://realm.io/docs/swift/latest/#limiting-results
+     
         guard let realm = try? Realm() else { return [] }
         let medias = realm.objects(InstagramMedia.self).sorted(byKeyPath: "commentsCount", ascending: false)
         if medias.count > limit {
@@ -60,7 +60,7 @@ class DataService {
         return Array(medias)
     }
     
-    // Returns last (n) weeks posted media
+    // Возврат постов за несколько недель
     static func lastWeeksPosted (weeks: Int) -> [InstagramMedia] {
         guard let realm = try? Realm() else { return [] }
         guard let fromDate = Calendar.current.date(byAdding: .day, value: -(7 * weeks), to: Date()) else { return [] }
@@ -69,7 +69,7 @@ class DataService {
         return Array(medias)
     }
     
-    // Returns best Engagement
+    // Возврат лучших фото
     static func bestEngagement (with limit: Int) -> [InstagramMedia] {
         guard let realm = try? Realm() else { return [] }
         let medias = realm.objects(InstagramMedia.self).sorted(byKeyPath: "engagementCount", ascending: false)
@@ -79,7 +79,7 @@ class DataService {
         return Array(medias)
     }
     
-    // Returns the oldest media stored locally
+    // возврат подряд постов
     static func instagramMediaIndex() -> (offset: String?, count: Int) {
         guard let realm = try? Realm() else { return (nil, 0) }
         let entries = realm.objects(InstagramMedia.self).sorted(byKeyPath: "createdTime", ascending: true)

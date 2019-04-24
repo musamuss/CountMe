@@ -8,7 +8,7 @@ class InstagramMedia: Object, Mappable {
     @objc dynamic var type = ""
     @objc dynamic var imageUrl = ""
     @objc dynamic var createdTime = Date()
-    @objc dynamic var weekday = 0 // https://developer.apple.com/documentation/foundation/nsdatecomponents/1410442-weekday
+    @objc dynamic var weekday = 0 
     @objc dynamic var likesCount = 0
     @objc dynamic var commentsCount = 0
     @objc dynamic var engagementCount = 0 // includes the total number of Instagram accounts that liked or commented a post

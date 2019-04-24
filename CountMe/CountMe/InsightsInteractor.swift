@@ -37,7 +37,7 @@ class InsightsInteractor {
     
     func loadStoredMedia() {
         let bestEngagement = DataService.bestEngagement(with: 25)
-        let lastWeeksPosted = DataService.lastWeeksPosted(weeks: 12)
+        let lastWeeksPosted = DataService.lastWeeksPosted(weeks: 20)
         let topMostCommented = DataService.mostLiked(with: 25)
         let bestEngagementDictionary: [String: Any] = ["sectionTitle": AppConfiguration.TableViewSections.zero, "items": bestEngagement]
         let mostCommentedDictionary: [String: Any] = ["sectionTitle": AppConfiguration.TableViewSections.one, "items": topMostCommented]

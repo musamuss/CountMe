@@ -11,8 +11,8 @@ class AddAccountPresenter {
     
     func presentAddAccount() {
         let leftBarButton = UIBarButtonItem()
-        leftBarButton.title = "Account"
-        let rightBarButton = UIBarButtonItem(title: "Done", style: .plain, target: viewController, action: #selector(AddAccountViewController.doneTapped))
+        leftBarButton.title = "Аккаунт"
+        let rightBarButton = UIBarButtonItem(title: "Готово", style: .plain, target: viewController, action: #selector(AddAccountViewController.doneTapped))
         self.viewController?.diplayAddAccount(with: leftBarButton, rightBarButton: rightBarButton)
     }
     
@@ -20,15 +20,15 @@ class AddAccountPresenter {
         let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         activityIndicator.color = UIColor.black
         activityIndicator.startAnimating()
-        let leftBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: viewController, action: #selector(AddAccountViewController.cancelTapped))
+        let leftBarButton = UIBarButtonItem(title: "Отменить", style: .plain, target: viewController, action: #selector(AddAccountViewController.cancelTapped))
         let rightBarButton = UIBarButtonItem(customView: activityIndicator)
         viewController?.diplayLoadingAccount(with: leftBarButton, rightBarButton: rightBarButton)
     }
     
     func presentUpdateAccount(account: String) {
         let leftBarButton = UIBarButtonItem()
-        leftBarButton.title = "Account"
-        let rightBarButton = UIBarButtonItem(title: "Done", style: .plain, target: viewController, action: #selector(AddAccountViewController.doneTapped))
+        leftBarButton.title = "Аккаунт"
+        let rightBarButton = UIBarButtonItem(title: "Готово", style: .plain, target: viewController, action: #selector(AddAccountViewController.doneTapped))
         viewController?.diplayUpdateAccount(with: account, leftBarButton: leftBarButton, rightBarButton: rightBarButton)
     }
     
