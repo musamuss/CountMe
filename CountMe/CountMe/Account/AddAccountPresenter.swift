@@ -28,13 +28,15 @@ class AddAccountPresenter {
     func presentUpdateAccount(account: String) {
         let leftBarButton = UIBarButtonItem()
         leftBarButton.title = "Аккаунт"
-        let rightBarButton = UIBarButtonItem(title: "Готово", style: .plain, target: viewController, action: #selector(AddAccountViewController.doneTapped))
+        let rightBarButton = UIBarButtonItem(title: "Готово", style: .plain, target: viewController, action:
+            #selector(AddAccountViewController.doneTapped))
         viewController?.diplayUpdateAccount(with: account, leftBarButton: leftBarButton, rightBarButton: rightBarButton)
     }
     
     func presentReportsCompleted() {
         presentAddAccount()
         viewController?.diplayAlert(title: AppConfiguration.Messages.reportsCompletedTitle, message: AppConfiguration.Messages.reportsCompletedMessage)
+       
     }
     
     // MARK: - Present Alert Controller
@@ -42,5 +44,7 @@ class AddAccountPresenter {
     func presentAlertController(title: String, message: String) {
         presentAddAccount()
         viewController?.diplayAlert(title: title, message: message)
+        
     }
+   
 }

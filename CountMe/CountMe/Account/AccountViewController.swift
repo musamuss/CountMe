@@ -5,7 +5,7 @@ class AccountViewController: UITableViewController {
     // MARK: - Properties
 
     @IBOutlet weak var accountNameTableCell: UITableViewCell!
-
+    
     // MARK: - View lifecycle
     
     override func viewWillAppear(_ animated: Bool) {
@@ -15,6 +15,7 @@ class AccountViewController: UITableViewController {
             return
         }
         accountNameTableCell.textLabel?.text = name
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {

@@ -13,7 +13,7 @@
         <!--Root View Controller-->
         <scene sceneID="xwV-hr-CeW">
             <objects>
-                <tableViewController id="v84-Jc-Z4x" sceneMemberID="viewController">
+                <tableViewController id="v84-Jc-Z4x" customClass="accountsTableViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5zT-Kk-WML">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,7 +239,7 @@
         <!--Account-->
         <scene sceneID="Tvy-qp-baG">
             <objects>
-                <tableViewController id="Bhu-Bn-CkK" customClass="AccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AccountViewController" id="Bhu-Bn-CkK" customClass="AccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3js-w7-gGD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,7 +332,7 @@
         <!--Account-->
         <scene sceneID="4Se-zx-4NH">
             <objects>
-                <viewController title="Account" hidesBottomBarWhenPushed="YES" id="FQt-a7-1Ut" customClass="AddAccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddAccountViewController" title="Account" hidesBottomBarWhenPushed="YES" id="FQt-a7-1Ut" customClass="AddAccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vvy-Dj-R8Z"/>
                         <viewControllerLayoutGuide type="bottom" id="Wvd-yY-pFs"/>
@@ -342,7 +342,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsf-sP-6y6">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CountMe are only available for public instagram accounts. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dd-VN-puN">
                                         <rect key="frame" x="22" y="18" width="331" height="50"/>
@@ -435,6 +435,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="usernameTextfield" destination="gfd-Jh-hus" id="3pL-cz-7Km"/>
+                        <segue destination="Bhu-Bn-CkK" kind="show" identifier="back" id="rH9-c7-vQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2M-5l-IpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -445,4 +446,7 @@
     <resources>
         <image name="user-icon" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rH9-c7-vQZ"/>
+    </inferredMetricsTieBreakers>
 </document>

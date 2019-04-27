@@ -5,9 +5,9 @@ class AppConfiguration {
     // MARK: - AppConfiguration.TableViewSection
     
     struct TableViewSections {
-        static let zero = NSLocalizedString("Лучшая подборка", comment: "")
-        static let one = NSLocalizedString("Top 25", comment: "")
-        static let two = NSLocalizedString("Последние посты", comment: "")
+        static let zero = NSLocalizedString("Лучшие фото за последнее время", comment: "")
+        static let one = NSLocalizedString("Top 25 коментированных", comment: "")
+        static let two = NSLocalizedString("Последние опубликованные", comment: "")
     }
     
     // MARK: - AppConfiguration.TableViewCellIdentifiers
@@ -36,4 +36,5 @@ class AppConfiguration {
         static let deleteReportsTitle = NSLocalizedString("Delete Reports", comment: "")
         static let deleteReportsMessage = NSLocalizedString("Remove my account and delete all the reports", comment: "")
     }
+    
 }

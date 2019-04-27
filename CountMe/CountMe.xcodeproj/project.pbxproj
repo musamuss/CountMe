@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		451051CA226A0C86009318B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451051C9226A0C86009318B2 /* AppDelegate.swift */; };
-		451051CC226A0C86009318B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451051CB226A0C86009318B2 /* ViewController.swift */; };
 		451051CF226A0C86009318B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451051CD226A0C86009318B2 /* Main.storyboard */; };
 		451051D1226A0C88009318B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451051D0226A0C88009318B2 /* Assets.xcassets */; };
 		451051D4226A0C88009318B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451051D2226A0C88009318B2 /* LaunchScreen.storyboard */; };
@@ -27,6 +26,7 @@
 		5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */; };
 		5B1349EB226F7DE9002CE3D1 /* AddAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */; };
 		5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */; };
+		5B134A2E2274B2A1002CE3D1 /* accountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B134A2D2274B2A1002CE3D1 /* accountsTableViewController.swift */; };
 		723381D4388879030DD6B18F /* Pods_CountMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F856ED347708DE5ED4718947 /* Pods_CountMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,6 @@
 		16E74BF17FD2259D0770857A /* Pods-CountMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountMe.release.xcconfig"; path = "Target Support Files/Pods-CountMe/Pods-CountMe.release.xcconfig"; sourceTree = "<group>"; };
 		451051C6226A0C86009318B2 /* CountMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451051C9226A0C86009318B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		451051CB226A0C86009318B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		451051CE226A0C86009318B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		451051D0226A0C88009318B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451051D3226A0C88009318B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountPresenter.swift; sourceTree = "<group>"; };
 		5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountInteractor.swift; sourceTree = "<group>"; };
 		5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5B134A2D2274B2A1002CE3D1 /* accountsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountsTableViewController.swift; sourceTree = "<group>"; };
 		F856ED347708DE5ED4718947 /* Pods_CountMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				451051C9226A0C86009318B2 /* AppDelegate.swift */,
-				451051CB226A0C86009318B2 /* ViewController.swift */,
+				5B134A2D2274B2A1002CE3D1 /* accountsTableViewController.swift */,
 				5B1349E4226F7DE1002CE3D1 /* Account */,
 				5B1349CD226F79B9002CE3D1 /* AppConfiguration.swift */,
 				5B1349CF226F7B2A002CE3D1 /* AppExtensions.swift */,
@@ -286,9 +286,9 @@
 				5B1349D4226F7BD3002CE3D1 /* DataService.swift in Sources */,
 				5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */,
 				5B1349D1226F7B2B002CE3D1 /* AppExtensions.swift in Sources */,
-				451051CC226A0C86009318B2 /* ViewController.swift in Sources */,
 				451051CA226A0C86009318B2 /* AppDelegate.swift in Sources */,
 				5B1349D8226F7C36002CE3D1 /* InstagramMedia.swift in Sources */,
+				5B134A2E2274B2A1002CE3D1 /* accountsTableViewController.swift in Sources */,
 				5B1349E1226F7D7C002CE3D1 /* InstagramMediaCollectionViewCell.swift in Sources */,
 				5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */,
 				5B1349E9226F7DE8002CE3D1 /* AddAccountViewController.swift in Sources */,

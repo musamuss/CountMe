@@ -83,8 +83,9 @@ class AddAccountViewController: UIViewController, AddAccountDisplayLogic {
     
     func diplayAlert(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: AppConfiguration.Messages.okButton, style: .default, handler: nil)
+        let alertAction = UIAlertAction(title: AppConfiguration.Messages.okButton, style: .default, handler:{ action in self.navigationController?.popToRootViewController(animated: true)})
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: nil)
+       
     }
 }
