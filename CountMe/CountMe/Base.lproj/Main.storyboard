@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="650" y="341"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="h57-Ba-R69">
             <objects>
-                <viewController id="Ju8-37-Bq0" customClass="ProfileViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ju8-37-Bq0" customClass="AuthViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="whX-GM-IPG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dn4-b2-kYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="342"/>
+            <point key="canvasLocation" x="1617" y="341"/>
         </scene>
         <!--CountMe-->
         <scene sceneID="bzf-BK-Iuo">

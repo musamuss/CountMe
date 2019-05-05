@@ -39,5 +39,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>InstagramRedirectURI</key>
+	<string>https://tukatuka.ru</string>
+	<key>InstagramClientId</key>
+	<string>bc42beba07134ba39fbaa975c97c8171</string>
 </dict>
 </plist>
