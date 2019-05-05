@@ -17,7 +17,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-let InstagramProvider = MoyaProvider<Instagram>(plugins: [NetworkLoggerPlugin(verbose: false, responseDataFormatter: JSONResponseDataFormatter)])
+let InstagramProvider = MoyaProvider<Instagram1>(plugins: [NetworkLoggerPlugin(verbose: false, responseDataFormatter: JSONResponseDataFormatter)])
 
 // MARK: - Provider support
 
@@ -27,11 +27,11 @@ private extension String {
     }
 }
 
-public enum Instagram {
+public enum Instagram1 {
     case userMedia(String)
 }
 
-extension Instagram: TargetType {
+extension Instagram1: TargetType {
     public var baseURL: URL { return URL(string: Constant.baseURL)! }
     public var path: String {
         switch self {

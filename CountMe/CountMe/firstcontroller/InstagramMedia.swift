@@ -1,8 +1,8 @@
 import ObjectMapper
 import RealmSwift
 
-class InstagramMedia: Object, Mappable {
-    
+class InstagramMedia1: Object, Mappable {
+
     @objc dynamic var id = ""
     @objc dynamic var code = ""
     @objc dynamic var type = ""

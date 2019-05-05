@@ -30,7 +30,7 @@ class InsightsPresenter: InstagramMediaPresentation {
         var instagramMediaSections = [InstagramMediaSection]()
         for section in items {
             guard let sectionTitle = section["sectionTitle"] as? String,
-            let instagramMedias = section["items"] as? [InstagramMedia] else { return }
+            let instagramMedias = section["items"] as? [InstagramMedia1] else { return }
             var instagramMediaViews = [InstagramMediaView]()
             for item in instagramMedias {
                 let itemView = InstagramMediaView(likes: NSLocalizedString("Likes: ", comment: "")+"\(item.likesCount.formattedWithPoint)", comments: NSLocalizedString("Comments: ", comment: "")+"\(item.commentsCount.formattedWithPoint)", imageURL: item.imageUrl)
