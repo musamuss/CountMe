@@ -45,11 +45,11 @@ class AuthViewController: UIViewController {
     }
     
     func login(completion: @escaping (_ result: Bool, _ err: Error?) ->()) {
-//        instagramApi.login(from: navigationController!, withScopes: [.all], success: {
-//            completion(true, nil)
-//        }, failure: { err in
-//            completion(false, err)
-//        })
+        instagramApi.login(from: navigationController!, withScopes: [.all], success: {
+            completion(true, nil)
+        }, failure: { err in
+            completion(false, err)
+        })
     }
     
 }

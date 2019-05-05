@@ -8,8 +8,9 @@
 
 import CollectionKit
 import TinyConstraints
+import SwiftInstagram
 
-//let instagramApi = Instagram.shared
+let instagramApi = Instagram.shared
 let notificationNameReloadMediaUI = Notification.Name(rawValue: "reloadMediaUI")
 let notificationNameReloadHeaderUI = Notification.Name(rawValue: "reloadHeaderUI")
 let notificationNameReloadNavBarUI = Notification.Name(rawValue: "reloadNavBarUI")
