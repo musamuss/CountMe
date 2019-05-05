@@ -13,7 +13,6 @@ class InsightsViewController: UITableViewController, InsightsViewDisplayLogic {
     var presenter: InstagramMediaPresentation?
     var sections: [InstagramMediaSection]?
     var storedOffsets = [Int: CGFloat]()
-
     @IBOutlet weak var footerView: UIView?
     @IBOutlet weak var weekdayLabel: UILabel!
     @IBOutlet weak var refreshController: UIRefreshControl!
@@ -39,11 +38,12 @@ class InsightsViewController: UITableViewController, InsightsViewDisplayLogic {
     }
     
     // MARK: - View lifecycle
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         fetchMediaOnload()
+        
     }
     
     // MARK: - SetupUI
@@ -97,11 +97,11 @@ class InsightsViewController: UITableViewController, InsightsViewDisplayLogic {
         fetchMediaOnload()
     }
     
-    @IBAction func displayAccount(_ sender: Any) {
+    /*@IBAction func displayAccount(_ sender: Any) {
         if let tabBarController = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController {
             tabBarController.selectedIndex = 1
         }
-    }
+    }*/  // переход по нажатию на главном экране аккаунта на соседний контроллер
         
     func diplayFetchedMedia(instagramMediaSections: [InstagramMediaSection], weekday: String) {
         self.sections = instagramMediaSections
@@ -144,4 +144,5 @@ extension InsightsViewController: UICollectionViewDelegate, UICollectionViewData
         let h = collectionView.frame.height - 10
         return CGSize(width: 324/2, height: h)
     }
+ 
 }

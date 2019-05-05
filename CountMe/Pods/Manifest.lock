@@ -13,12 +13,16 @@ PODS:
   - RealmSwift (3.14.1):
     - Realm (= 3.14.1)
   - Result (4.1.0)
+  - SwiftInstagram (1.1.2):
+    - SwiftInstagram/Core (= 1.1.2)
+  - SwiftInstagram/Core (1.1.2)
 
 DEPENDENCIES:
   - Kingfisher (~> 4.0)
   - Moya
   - ObjectMapper
   - RealmSwift
+  - SwiftInstagram (~> 1.1.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -29,6 +33,7 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - Result
+    - SwiftInstagram
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -38,7 +43,8 @@ SPEC CHECKSUMS:
   Realm: e12c9c2387d05c5bba3a9c394838f5870e85763b
   RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SwiftInstagram: 1579fd6ffb294de557bc47deddbe719fde6e2058
 
-PODFILE CHECKSUM: 9e26a0a0b7f664e2cf0be50534665fe26cb8a531
+PODFILE CHECKSUM: 8b7c6a4f97d6cc43d0b058dc1a6eef43b1289286
 
 COCOAPODS: 1.6.1
