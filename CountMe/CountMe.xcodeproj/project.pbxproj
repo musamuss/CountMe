@@ -26,6 +26,11 @@
 		5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */; };
 		5B1349EB226F7DE9002CE3D1 /* AddAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */; };
 		5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */; };
+		5BD270EB227F67EC002C1A28 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E6227F67EC002C1A28 /* AuthViewController.swift */; };
+		5BD270EC227F67EC002C1A28 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E7227F67EC002C1A28 /* ProfileHeader.swift */; };
+		5BD270ED227F67EC002C1A28 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E8227F67EC002C1A28 /* ProfileViewController.swift */; };
+		5BD270EE227F67EC002C1A28 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E9227F67EC002C1A28 /* CollectionViewController.swift */; };
+		5BD270EF227F67EC002C1A28 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270EA227F67EC002C1A28 /* ImageCell.swift */; };
 		723381D4388879030DD6B18F /* Pods_CountMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F856ED347708DE5ED4718947 /* Pods_CountMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,11 @@
 		5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountPresenter.swift; sourceTree = "<group>"; };
 		5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountInteractor.swift; sourceTree = "<group>"; };
 		5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5BD270E6227F67EC002C1A28 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		5BD270E7227F67EC002C1A28 /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		5BD270E8227F67EC002C1A28 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5BD270E9227F67EC002C1A28 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		5BD270EA227F67EC002C1A28 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		F856ED347708DE5ED4718947 /* Pods_CountMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,17 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				451051C9226A0C86009318B2 /* AppDelegate.swift */,
-				5B1349E4226F7DE1002CE3D1 /* Account */,
-				5B1349CD226F79B9002CE3D1 /* AppConfiguration.swift */,
-				5B1349CF226F7B2A002CE3D1 /* AppExtensions.swift */,
-				5B1349D0226F7B2A002CE3D1 /* AppUserAccount.swift */,
-				5B1349D7226F7C36002CE3D1 /* InstagramMedia.swift */,
-				5B1349D3226F7BD3002CE3D1 /* DataService.swift */,
-				5B1349D5226F7C12002CE3D1 /* InstagramAPI.swift */,
-				5B1349DD226F7D77002CE3D1 /* InsightsInteractor.swift */,
-				5B1349DE226F7D79002CE3D1 /* InsightsPresenter.swift */,
-				5B1349D9226F7D74002CE3D1 /* InsightsViewController.swift */,
-				5B1349DA226F7D76002CE3D1 /* Views */,
+				5BD270F0227F6B75002C1A28 /* firstcontroller */,
+				5BD270E5227F67EC002C1A28 /* secondcontroller */,
 				451051CD226A0C86009318B2 /* Main.storyboard */,
 				451051D0226A0C88009318B2 /* Assets.xcassets */,
 				451051D2226A0C88009318B2 /* LaunchScreen.storyboard */,
@@ -135,6 +136,36 @@
 				5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		5BD270E5227F67EC002C1A28 /* secondcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				5BD270E6227F67EC002C1A28 /* AuthViewController.swift */,
+				5BD270E7227F67EC002C1A28 /* ProfileHeader.swift */,
+				5BD270E8227F67EC002C1A28 /* ProfileViewController.swift */,
+				5BD270E9227F67EC002C1A28 /* CollectionViewController.swift */,
+				5BD270EA227F67EC002C1A28 /* ImageCell.swift */,
+			);
+			path = secondcontroller;
+			sourceTree = "<group>";
+		};
+		5BD270F0227F6B75002C1A28 /* firstcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				5B1349E4226F7DE1002CE3D1 /* Account */,
+				5B1349CD226F79B9002CE3D1 /* AppConfiguration.swift */,
+				5B1349CF226F7B2A002CE3D1 /* AppExtensions.swift */,
+				5B1349D0226F7B2A002CE3D1 /* AppUserAccount.swift */,
+				5B1349D7226F7C36002CE3D1 /* InstagramMedia.swift */,
+				5B1349D3226F7BD3002CE3D1 /* DataService.swift */,
+				5B1349D5226F7C12002CE3D1 /* InstagramAPI.swift */,
+				5B1349DD226F7D77002CE3D1 /* InsightsInteractor.swift */,
+				5B1349DE226F7D79002CE3D1 /* InsightsPresenter.swift */,
+				5B1349D9226F7D74002CE3D1 /* InsightsViewController.swift */,
+				5B1349DA226F7D76002CE3D1 /* Views */,
+			);
+			path = firstcontroller;
 			sourceTree = "<group>";
 		};
 		80A7ACF63AA105C5C4D96E50 /* Pods */ = {
@@ -226,6 +257,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CountMe/Pods-CountMe-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -233,12 +265,14 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -246,6 +280,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -285,11 +320,16 @@
 				5B1349D4226F7BD3002CE3D1 /* DataService.swift in Sources */,
 				5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */,
 				5B1349D1226F7B2B002CE3D1 /* AppExtensions.swift in Sources */,
+				5BD270EE227F67EC002C1A28 /* CollectionViewController.swift in Sources */,
+				5BD270EF227F67EC002C1A28 /* ImageCell.swift in Sources */,
 				451051CA226A0C86009318B2 /* AppDelegate.swift in Sources */,
 				5B1349D8226F7C36002CE3D1 /* InstagramMedia.swift in Sources */,
 				5B1349E1226F7D7C002CE3D1 /* InstagramMediaCollectionViewCell.swift in Sources */,
 				5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */,
+				5BD270EC227F67EC002C1A28 /* ProfileHeader.swift in Sources */,
+				5BD270ED227F67EC002C1A28 /* ProfileViewController.swift in Sources */,
 				5B1349E9226F7DE8002CE3D1 /* AddAccountViewController.swift in Sources */,
+				5BD270EB227F67EC002C1A28 /* AuthViewController.swift in Sources */,
 				5B1349E3226F7D7C002CE3D1 /* InsightsPresenter.swift in Sources */,
 				5B1349D6226F7C13002CE3D1 /* InstagramAPI.swift in Sources */,
 				5B1349DF226F7D7B002CE3D1 /* InsightsViewController.swift in Sources */,

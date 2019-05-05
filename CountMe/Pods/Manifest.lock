@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.8.2)
+  - CollectionKit (2.4.0):
+    - CollectionKit/Core (= 2.4.0)
+  - CollectionKit/Core (2.4.0)
   - Kingfisher (4.10.1)
   - Moya (13.0.0):
     - Moya/Core (= 13.0.0)
@@ -16,17 +19,21 @@ PODS:
   - SwiftInstagram (1.1.2):
     - SwiftInstagram/Core (= 1.1.2)
   - SwiftInstagram/Core (1.1.2)
+  - TinyConstraints (4.0.0)
 
 DEPENDENCIES:
+  - CollectionKit
   - Kingfisher (~> 4.0)
   - Moya
   - ObjectMapper
   - RealmSwift
   - SwiftInstagram (~> 1.1.2)
+  - TinyConstraints
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CollectionKit
     - Kingfisher
     - Moya
     - ObjectMapper
@@ -34,9 +41,11 @@ SPEC REPOS:
     - RealmSwift
     - Result
     - SwiftInstagram
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CollectionKit: 8f01e7629185bb81072c4aa734d105df5c2d1c8b
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   Moya: 161263550064ff8a4948e8ff63137fd72a876292
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
@@ -44,7 +53,8 @@ SPEC CHECKSUMS:
   RealmSwift: a82eab9b04c3e1616082c7e17aa300740847769c
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SwiftInstagram: 1579fd6ffb294de557bc47deddbe719fde6e2058
+  TinyConstraints: 03bc091844b98c18dbaead8b1153242a42721b56
 
-PODFILE CHECKSUM: 8b7c6a4f97d6cc43d0b058dc1a6eef43b1289286
+PODFILE CHECKSUM: 5ccaafa23a3679b3f950b405320316c0c2fe8567
 
 COCOAPODS: 1.6.1
