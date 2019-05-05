@@ -7,7 +7,7 @@
 //
 
 import TinyConstraints
-
+import SwiftInstagram
 class ImageCell: UIView {
     
     // MARK: -
@@ -61,35 +61,35 @@ class ImageCell: UIView {
     
     // MARK: -
     // MARK: Populate View with Data
-//    func populate(with instagramMedia: InstagramMedia) {
-//        let url = instagramMedia.images.standardResolution.url
-//        let task = URLSession.shared.dataTask(with: url) { data, urlResponse, err in
-//            if let err = err {
-//                print(err.localizedDescription)
-//                return
-//            }
-//            
-//            guard let data = data else {
-//                return
-//            }
-//            
-//            if let image = UIImage(data: data) {
-//                DispatchQueue.main.async {
-//                    self.imageView.image = image
-//                }
-//            }
-//        }
-//        
-//        task.resume()
-//        
-//        if countType == .likes {
-//            countLabel.text = String(instagramMedia.likes.count)
-//        } else {
-//            countLabel.text = String(instagramMedia.comments.count)
-//        }
-//        
-//        
-//    }
+    func populate(with instagramMedia: InstagramMedia) {
+        let url = instagramMedia.images.standardResolution.url
+        let task = URLSession.shared.dataTask(with: url) { data, urlResponse, err in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+            
+            guard let data = data else {
+                return
+            }
+            
+            if let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            }
+        }
+        
+        task.resume()
+        
+        if countType == .likes {
+            countLabel.text = String(instagramMedia.likes.count)
+        } else {
+            countLabel.text = String(instagramMedia.comments.count)
+        }
+        
+        
+    }
     
 }
 

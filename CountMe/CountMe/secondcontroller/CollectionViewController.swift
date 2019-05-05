@@ -7,7 +7,7 @@
 //
 
 import CollectionKit
-
+import SwiftInstagram
 class CollectionViewController: UIViewController {
     
     let collectionView = CollectionView()

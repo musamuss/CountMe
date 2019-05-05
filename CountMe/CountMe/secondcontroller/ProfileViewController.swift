@@ -62,9 +62,9 @@ class ProfileViewController: CollectionViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        if !instagramApi.isAuthenticated {
-//            navigationController?.pushViewController(AuthViewController(), animated: true)
-//        }
+ if !instagramApi.isAuthenticated {
+        navigationController?.pushViewController(AuthViewController(), animated: true)
+      }
     }
     
     lazy var changeCountTypeBarButtonItem: UIBarButtonItem = {
@@ -223,11 +223,11 @@ class ProfileViewController: CollectionViewController {
     }
     
     func logout(completion: @escaping (_ result: Bool) ->()) {
-//        if instagramApi.logout() {
-//            completion(true)
-//        } else {
-//            completion(false)
-//        }
+        if instagramApi.logout() {
+            completion(true)
+        } else {
+            completion(false)
+        }
     }
     
 }
