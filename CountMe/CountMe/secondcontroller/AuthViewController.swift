@@ -13,9 +13,13 @@ class AuthViewController: UIViewController {
     
     let loginButton: UIButton = {
         let button = UIButton()
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.setTitle("Login to Instagram", for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.backgroundColor = UIColor(red: 0.9, green: 0.32, blue: 0.39, alpha: 1)
+        button.layer.cornerRadius = 12
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor(red: 0.9, green: 0.32, blue: 0.39, alpha: 1).cgColor
         return button
     }()
     
