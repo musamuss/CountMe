@@ -2,8 +2,8 @@
 //  AuthViewController.swift
 //  SwiftInstagramAPI
 //
-//  Created by Alex Nagy on 07/12/2018.
-//  Copyright © 2018 Alex Nagy. All rights reserved.
+//  Created by Игорь Силаев and musamuss on 19/04/2019.
+//  Copyright © 2019 Игорь Силаев. All rights reserved.
 //
 
 import UIKit

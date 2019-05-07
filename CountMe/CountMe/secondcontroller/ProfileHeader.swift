@@ -2,12 +2,12 @@
 //  ProfileHeader.swift
 //  SwiftInstagramAPI
 //
-//  Created by Alex Nagy on 07/12/2018.
-//  Copyright © 2018 Alex Nagy. All rights reserved.
+//  Created by Игорь Силаев and musamuss on 19/04/2019.
+//  Copyright © 2019 Игорь Силаев. All rights reserved.
 //
 
 import TinyConstraints
-
+import SwiftInstagram
 class ProfileHeader: UIView {
     
     // MARK: -
@@ -277,82 +277,82 @@ class ProfileHeader: UIView {
     // MARK: -
     // MARK: Populate View with Data
     
-//    func populate(with instagramUser: InstagramUser?) {
-//        guard let instagramUser = instagramUser else { return }
-//        
-//        let username = instagramUser.username
-//        let userInfo = ["username": username]
-//        NotificationCenter.default.post(name: notificationNameReloadNavBarUI, object: nil, userInfo: userInfo)
-//        
-//        let url = instagramUser.profilePicture
-//        let task = URLSession.shared.dataTask(with: url) { data, urlResponse, err in
-//            if let err = err {
-//                print(err.localizedDescription)
-//                return
-//            }
-//            
-//            guard let data = data else {
-//                return
-//            }
-//            
-//            if let image = UIImage(data: data) {
-//                DispatchQueue.main.async {
-//                    self.profileImageView.image = image
-//                }
-//            }
-//        }
-//        
-//        task.resume()
-//        
-//        self.fullNameLabel.text = instagramUser.fullName
-//        if let bio = instagramUser.bio {
-//            self.bioTextView.text = bio
-//        }
-//        if let website = instagramUser.website {
-//            self.websiteLabel.text = website
-//        }
-//        
-//        if let counts = instagramUser.counts {
-//            
-//            let oldPostsCount = UserDefaults.standard.integer(forKey: "oldPostsCount")
-//            let oldFollowersCount = UserDefaults.standard.integer(forKey: "oldFollowersCount")
-//            let oldFollowingCount = UserDefaults.standard.integer(forKey: "oldFollowingCount")
-//            let newPostsCount = counts.media
-//            let newFollowersCount = counts.followedBy
-//            let newFollowingCount = counts.follows
-//            
-//            self.postsCountLabel.text = String(newPostsCount)
-//            self.followersCountLabel.text = String(newFollowersCount)
-//            self.followingCountLabel.text = String(newFollowingCount)
-//            
-//            let postsCount = newPostsCount - oldPostsCount
-//            if newPostsCount >= oldPostsCount {
-//                self.postsDifLabel.text = "+\(postsCount)"
-//            } else {
-//                self.postsDifLabel.text = "\(postsCount)"
-//            }
-//            
-//            let followersCount = newFollowersCount - oldFollowersCount
-//            if newFollowersCount >= oldFollowersCount {
-//                self.followersDifLabel.text = "+\(followersCount)"
-//            } else {
-//                self.followersDifLabel.text = "\(followersCount)"
-//            }
-//            
-//            let followingCount = newFollowingCount - oldFollowingCount
-//            if newFollowingCount >= oldFollowingCount {
-//                self.followingDifLabel.text = "+\(followingCount)"
-//            } else {
-//                self.followingDifLabel.text = "\(followingCount)"
-//            }
-//            
-//            UserDefaults.standard.set(newPostsCount, forKey: "oldPostsCount")
-//            UserDefaults.standard.set(newFollowersCount, forKey: "oldFollowersCount")
-//            UserDefaults.standard.set(newFollowingCount, forKey: "oldFollowingCount")
-//            UserDefaults.standard.synchronize()
-//        }
-//        
-//    }
+    func populate(with instagramUser: InstagramUser?) {
+        guard let instagramUser = instagramUser else { return }
+        
+        let username = instagramUser.username
+        let userInfo = ["username": username]
+        NotificationCenter.default.post(name: notificationNameReloadNavBarUI, object: nil, userInfo: userInfo)
+        
+        let url = instagramUser.profilePicture
+        let task = URLSession.shared.dataTask(with: url) { data, urlResponse, err in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+            
+            guard let data = data else {
+                return
+            }
+            
+            if let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.profileImageView.image = image
+                }
+            }
+        }
+        
+        task.resume()
+        
+        self.fullNameLabel.text = instagramUser.fullName
+        if let bio = instagramUser.bio {
+            self.bioTextView.text = bio
+        }
+        if let website = instagramUser.website {
+            self.websiteLabel.text = website
+        }
+        
+        if let counts = instagramUser.counts {
+            
+            let oldPostsCount = UserDefaults.standard.integer(forKey: "oldPostsCount")
+            let oldFollowersCount = UserDefaults.standard.integer(forKey: "oldFollowersCount")
+            let oldFollowingCount = UserDefaults.standard.integer(forKey: "oldFollowingCount")
+            let newPostsCount = counts.media
+            let newFollowersCount = counts.followedBy
+            let newFollowingCount = counts.follows
+            
+            self.postsCountLabel.text = String(newPostsCount)
+            self.followersCountLabel.text = String(newFollowersCount)
+            self.followingCountLabel.text = String(newFollowingCount)
+            
+            let postsCount = newPostsCount - oldPostsCount
+            if newPostsCount >= oldPostsCount {
+                self.postsDifLabel.text = "+\(postsCount)"
+            } else {
+                self.postsDifLabel.text = "\(postsCount)"
+            }
+            
+            let followersCount = newFollowersCount - oldFollowersCount
+            if newFollowersCount >= oldFollowersCount {
+                self.followersDifLabel.text = "+\(followersCount)"
+            } else {
+                self.followersDifLabel.text = "\(followersCount)"
+            }
+            
+            let followingCount = newFollowingCount - oldFollowingCount
+            if newFollowingCount >= oldFollowingCount {
+                self.followingDifLabel.text = "+\(followingCount)"
+            } else {
+                self.followingDifLabel.text = "\(followingCount)"
+            }
+            
+            UserDefaults.standard.set(newPostsCount, forKey: "oldPostsCount")
+            UserDefaults.standard.set(newFollowersCount, forKey: "oldFollowersCount")
+            UserDefaults.standard.set(newFollowingCount, forKey: "oldFollowingCount")
+            UserDefaults.standard.synchronize()
+        }
+        
+    }
 }
 
 

@@ -2,8 +2,8 @@
 //  ProfileViewController.swift
 //  SwiftInstagramAPI
 //
-//  Created by Alex Nagy on 07/12/2018.
-//  Copyright © 2018 Alex Nagy. All rights reserved.
+//  Created by Игорь Силаев and musamuss on 19/04/2019.
+//  Copyright © 2019 Игорь Силаев. All rights reserved.
 //
 
 import CollectionKit
@@ -23,8 +23,8 @@ var countType: CountType = .likes
 
 class ProfileViewController: CollectionViewController {
     
-//    var instagramMediaList: [InstagramMedia] = []
-//    var instagramUser: InstagramUser?
+    var instagramMediaList: [InstagramMedia] = []
+    var instagramUser: InstagramUser?
     
     // MARK: -
     // MARK: Header Composer Provider
@@ -34,14 +34,14 @@ class ProfileViewController: CollectionViewController {
     // MARK: -
     // MARK: Provider Elements for Section 1
     
-//    lazy var dataSource = ArrayDataSource(data: instagramMediaList) // may be [] upon initialization because purchases may not be ready; see `setupNotificationCenterObservers` below
-//    lazy var viewSource = ClosureViewSource(viewUpdater: { (view: ImageCell, data: InstagramMedia, index: Int) in
-//        view.populate(with: data)
-//    })
-//    lazy var sizeSource = { (index: Int, data: InstagramMedia, collectionSize: CGSize) -> CGSize in
-//        let width = (self.view.frame.width - 2) / 3
-//        return CGSize(width: width, height: width)
-//    }
+    lazy var dataSource = ArrayDataSource(data: instagramMediaList) // may be [] upon initialization because purchases may not be ready; see `setupNotificationCenterObservers` below
+    lazy var viewSource = ClosureViewSource(viewUpdater: { (view: ImageCell, data: InstagramMedia, index: Int) in
+        view.populate(with: data)
+    })
+    lazy var sizeSource = { (index: Int, data: InstagramMedia, collectionSize: CGSize) -> CGSize in
+        let width = (self.view.frame.width - 2) / 3
+        return CGSize(width: width, height: width)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +83,7 @@ class ProfileViewController: CollectionViewController {
     
     fileprivate func setupNotificationCenterObservers() {
         NotificationCenter.default.addObserver(forName: notificationNameReloadMediaUI, object: nil, queue: OperationQueue.main) { (notification) in
-//            self.dataSource.data = self.instagramMediaList
+         self.dataSource.data = self.instagramMediaList
         }
         
         NotificationCenter.default.addObserver(forName: notificationNameReloadHeaderUI, object: nil, queue: OperationQueue.main) { (notification) in
@@ -103,36 +103,36 @@ class ProfileViewController: CollectionViewController {
     fileprivate func setupProvider() {
         
         // create a provider for the section 1
-//        let section1Provider = BasicProvider(
-//            dataSource: dataSource,
-//            viewSource: viewSource,
-//            sizeSource: sizeSource
-//        )
+        let section1Provider = BasicProvider(
+            dataSource: dataSource,
+            viewSource: viewSource,
+            sizeSource: sizeSource
+        )
 //
-//        section1Provider.layout = FlowLayout(spacing: 1)
-//
+        section1Provider.layout = FlowLayout(spacing: 1)
+
 //        // create a sections provider with all the setcions
-//        let sectionsProvider = ComposedProvider(sections: [section1Provider])
+    let sectionsProvider = ComposedProvider(sections: [section1Provider])
 //
 //        // create a composed header provider so we may add the `headerViewSource` and `headerSizeSource` and `sections`
-//        let composedProvider = ComposedHeaderProvider(
-//            headerViewSource: ClosureViewSource(
-//                viewUpdater: { (view: ProfileHeader, data, index) in
-//                    view.populate(with: self.instagramUser)
-//            }),
-//            headerSizeSource: { (index, data, maxSize) -> CGSize in
-//                return CGSize(width: maxSize.width, height: 200)
-//        },
-//            sections: sectionsProvider.sections
-//        )
+        let composedProvider = ComposedHeaderProvider(
+            headerViewSource: ClosureViewSource(
+                viewUpdater: { (view: ProfileHeader, data, index) in
+                    view.populate(with: self.instagramUser)
+            }),
+            headerSizeSource: { (index, data, maxSize) -> CGSize in
+                return CGSize(width: maxSize.width, height: 200)
+        },
+            sections: sectionsProvider.sections
+        )
 //
 //        // so we may access the headerComposer outside of this scope if we need to; for example accessing its `isSticky` property
-//        headerComposer = composedProvider
-//        // set the `provider` to be newly created `composedProvider`
-//        provider = composedProvider
-//
-//        // set the header to be sticky
-//        setHeaderSticky(false)
+        headerComposer = composedProvider
+        // set the `provider` to be newly created `composedProvider`
+        provider = composedProvider
+
+        // set the header to be sticky
+        setHeaderSticky(false)
         
     }
     
@@ -141,52 +141,52 @@ class ProfileViewController: CollectionViewController {
     }
     
     func fetchCurrentUser() {
-//        fetchUser { (instagramUser, err) in
-//            if let err = err {
-//                print(err.localizedDescription)
-//                return
-//            }
-//            
-//            guard let instagramUser = instagramUser else {
-//                return
-//            }
-//            
-//            self.instagramUser = instagramUser
-//            NotificationCenter.default.post(name: notificationNameReloadHeaderUI, object: nil)
-//        }
+        fetchUser { (instagramUser, err) in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+            
+            guard let instagramUser = instagramUser else {
+                return
+            }
+            
+            self.instagramUser = instagramUser
+            NotificationCenter.default.post(name: notificationNameReloadHeaderUI, object: nil)
+        }
     }
     
-//    func fetchUser(completion: @escaping (_ instagramUser: InstagramUser?, _ error: Error?) ->()) {
-//        instagramApi.user("self", success: { (instagramUser) in
-//            completion(instagramUser, nil)
-//        }) { (err) in
-//            completion(nil, err)
-//        }
-//    }
+    func fetchUser(completion: @escaping (_ instagramUser: InstagramUser?, _ error: Error?) ->()) {
+        instagramApi.user("self", success: { (instagramUser) in
+            completion(instagramUser, nil)
+        }) { (err) in
+            completion(nil, err)
+        }
+    }
     
     func fetchCurrentMedia(count: Int) {
-//        fetchMedia(count: count) { (instagramMediaList, err) in
-//            if let err = err {
-//                print(err.localizedDescription)
-//                return
-//            }
-//
-//            guard let instagramMediaList = instagramMediaList else {
-//                return
-//            }
-//
-//            self.instagramMediaList = instagramMediaList
-//            NotificationCenter.default.post(name: notificationNameReloadMediaUI, object: nil)
-//        }
+        fetchMedia(count: count) { (instagramMediaList, err) in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+
+            guard let instagramMediaList = instagramMediaList else {
+                return
+            }
+
+            self.instagramMediaList = instagramMediaList
+            NotificationCenter.default.post(name: notificationNameReloadMediaUI, object: nil)
+        }
     }
     
-//    func fetchMedia(count: Int, completion: @escaping (_ images: [InstagramMedia]?, _ error: Error?) ->()) {
-//        instagramApi.recentMedia(fromUser: "self", count: count, success: { mediaList in
-//            completion(mediaList, nil)
-//        }, failure: { err in
-//            completion(nil, err)
-//        })
-//    }
+    func fetchMedia(count: Int, completion: @escaping (_ images: [InstagramMedia]?, _ error: Error?) ->()) {
+        instagramApi.recentMedia(fromUser: "self", count: count, success: { mediaList in
+            completion(mediaList, nil)
+        }, failure: { err in
+            completion(nil, err)
+        })
+    }
     
     @objc fileprivate func handleChangeCountTypeBarButtonItemTapped() {
         if countType == .likes {
