@@ -52,7 +52,7 @@ class ImageCell: UIView {
     lazy var countLabel: UILabel = {
         var label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 36)
-        label.textColor = UIColor(white: 1.0, alpha: 0.7)
+        label.textColor = UIColor(white: 1.0, alpha: 1)
         return label
     }()
     

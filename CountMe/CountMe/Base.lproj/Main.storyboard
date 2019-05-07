@@ -52,7 +52,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="T4K-Ub-6Lk"/>
+                        <viewLayoutGuide key="safeArea" id="PJV-Km-Pex"/>
                     </view>
                     <navigationItem key="navigationItem" id="cpX-Ky-SVJ"/>
                 </viewController>
@@ -390,12 +390,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="leading" secondItem="plh-OA-ALk" secondAttribute="leading" id="06c-pc-Uv2"/>
-                            <constraint firstItem="plh-OA-ALk" firstAttribute="trailing" secondItem="Bsf-sP-6y6" secondAttribute="trailing" id="8PQ-Mo-Tss"/>
-                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="top" secondItem="plh-OA-ALk" secondAttribute="top" id="Ud3-o1-VTX"/>
-                            <constraint firstItem="plh-OA-ALk" firstAttribute="bottom" secondItem="Bsf-sP-6y6" secondAttribute="bottom" id="zxe-t8-4i3"/>
+                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="leading" secondItem="yOe-X1-QN7" secondAttribute="leading" id="06c-pc-Uv2"/>
+                            <constraint firstItem="yOe-X1-QN7" firstAttribute="trailing" secondItem="Bsf-sP-6y6" secondAttribute="trailing" id="8PQ-Mo-Tss"/>
+                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="top" secondItem="yOe-X1-QN7" secondAttribute="top" id="Ud3-o1-VTX"/>
+                            <constraint firstItem="yOe-X1-QN7" firstAttribute="bottom" secondItem="Bsf-sP-6y6" secondAttribute="bottom" id="zxe-t8-4i3"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="plh-OA-ALk"/>
+                        <viewLayoutGuide key="safeArea" id="yOe-X1-QN7"/>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
