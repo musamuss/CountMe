@@ -81,12 +81,12 @@ class ImageCell: UIView {
         }
         
         task.resume()
-        
-        if countType == .likes {
-            countLabel.text = String(instagramMedia.likes.count)
-        } else {
-            countLabel.text = String(instagramMedia.comments.count)
-        }
+       //Цифры на фотках показывающие лайки и комменты
+//        if countType == .likes {
+//            countLabel.text = String(instagramMedia.likes.count)
+//        } else {
+//            countLabel.text = String(instagramMedia.comments.count)
+//        }
         
         
     }
