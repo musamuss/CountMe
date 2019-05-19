@@ -67,17 +67,17 @@ class ProfileViewController: CollectionViewController {
       }
     }
     
-    lazy var changeCountTypeBarButtonItem: UIBarButtonItem = {
-        var item = UIBarButtonItem(title: "Show Comments", style: .plain, target: self, action: #selector(handleChangeCountTypeBarButtonItemTapped))
-        return item
-    }()
+//    lazy var changeCountTypeBarButtonItem: UIBarButtonItem = {
+//        var item = UIBarButtonItem(title: "Show Comments", style: .plain, target: self, action: #selector(handleChangeCountTypeBarButtonItemTapped))
+//        return item
+//    }()
     
     fileprivate func setupNavBarItems() {
         
         let logOutBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(handleLogoutBarButtonItemTapped))
         let refreshBarButtonItem = UIBarButtonItem(title: "Refresh", style: .plain, target: self, action: #selector(handleRefreshBarButtonItemTapped))
         
-        navigationItem.setLeftBarButton(changeCountTypeBarButtonItem, animated: false)
+//        navigationItem.setLeftBarButton(changeCountTypeBarButtonItem, animated: false)
         navigationItem.setRightBarButtonItems([logOutBarButtonItem, refreshBarButtonItem], animated: false)
     }
     
@@ -188,16 +188,16 @@ class ProfileViewController: CollectionViewController {
         })
     }
     
-    @objc fileprivate func handleChangeCountTypeBarButtonItemTapped() {
-        if countType == .likes {
-            countType = .comments
-            changeCountTypeBarButtonItem.title = "Show Likes"
-        } else {
-            countType = .likes
-            changeCountTypeBarButtonItem.title = "Show Comments"
-        }
-        collectionView.reloadData()
-    }
+//    @objc fileprivate func handleChangeCountTypeBarButtonItemTapped() {
+//        if countType == .likes {
+//            countType = .comments
+//            changeCountTypeBarButtonItem.title = "Show Likes"
+//        } else {
+//            countType = .likes
+//            changeCountTypeBarButtonItem.title = "Show Comments"
+//        }
+//        collectionView.reloadData()
+//    }
     
     @objc fileprivate func handleRefreshBarButtonItemTapped() {
         print("Refreshing...")
