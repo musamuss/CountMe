@@ -89,41 +89,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="jpq-cl-e2R" userLabel="Header">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="10"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CountMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV0-0n-imp">
-                                    <rect key="frame" x="20" y="23" width="177.66666666666666" height="50"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="4xa-pO-Ca1"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEv-sR-kz0">
-                                    <rect key="frame" x="315" y="28" width="40" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="bsU-IN-sev"/>
-                                        <constraint firstAttribute="width" constant="40" id="m6j-vK-GrO"/>
-                                    </constraints>
-                                    <state key="normal" image="user-icon"/>
-                                    <connections>
-                                        <segue destination="Bhu-Bn-CkK" kind="show" id="K4a-Ba-mgu"/>
-                                    </connections>
-                                </button>
-                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="ZEv-sR-kz0" secondAttribute="trailing" constant="20" id="BbU-IS-lKk"/>
-                                <constraint firstItem="VV0-0n-imp" firstAttribute="leading" secondItem="jpq-cl-e2R" secondAttribute="leading" constant="20" id="MPn-RJ-Eg8"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VV0-0n-imp" secondAttribute="trailing" constant="20" symbolic="YES" id="cvj-pb-l6P"/>
-                                <constraint firstAttribute="bottom" secondItem="VV0-0n-imp" secondAttribute="bottom" constant="10" id="ozo-va-hai"/>
-                                <constraint firstAttribute="bottom" secondItem="ZEv-sR-kz0" secondAttribute="bottom" constant="15" id="sSt-JZ-XZg"/>
-                            </constraints>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="JxN-h8-FMB" userLabel="Footer">
-                            <rect key="frame" x="0.0" y="83" width="375" height="200"/>
+                            <rect key="frame" x="0.0" y="10" width="375" height="200"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGs-p6-Smb" userLabel="WeekdayBlue">
@@ -190,7 +161,28 @@
                         </connections>
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="p1R-Yc-Q8W"/>
+                    <navigationItem key="navigationItem" id="p1R-Yc-Q8W">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="Kda-i9-t0L">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Bm-Pt-V7j">
+                                <rect key="frame" x="16" y="0.0" width="198" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <state key="normal" title="CountMe">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="jHK-qR-tCP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZEv-sR-kz0">
+                                <rect key="frame" x="309" y="0.0" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="user-icon"/>
+                                <connections>
+                                    <segue destination="Bhu-Bn-CkK" kind="show" id="K4a-Ba-mgu"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="d5a-mh-CyY">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -206,7 +198,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PQN-30-Ju6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2335" y="-416"/>
+            <point key="canvasLocation" x="2333.5999999999999" y="-416.00985221674881"/>
         </scene>
         <!--Account-->
         <scene sceneID="Tvy-qp-baG">
