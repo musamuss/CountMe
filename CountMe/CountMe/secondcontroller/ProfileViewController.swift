@@ -54,7 +54,7 @@ class ProfileViewController: CollectionViewController {
         setupProvider()
         fetchData()
         refreshdata()
-                    }
+    }
     // MARK: -
     // MARK: ебучая тянужка обновления
     func refreshdata(){
@@ -115,13 +115,13 @@ class ProfileViewController: CollectionViewController {
             viewSource: viewSource,
             sizeSource: sizeSource
         )
-//
+
         section1Provider.layout = FlowLayout(spacing: 1)
 
-//        // create a sections provider with all the setcions
+       // create a sections provider with all the setcions
     let sectionsProvider = ComposedProvider(sections: [section1Provider])
-//
-//        // create a composed header provider so we may add the `headerViewSource` and `headerSizeSource` and `sections`
+
+        // create a composed header provider so we may add the `headerViewSource` and `headerSizeSource` and `sections`
         let composedProvider = ComposedHeaderProvider(
             headerViewSource: ClosureViewSource(
                 viewUpdater: { (view: ProfileHeader, data, index) in
@@ -132,8 +132,8 @@ class ProfileViewController: CollectionViewController {
         },
             sections: sectionsProvider.sections
         )
-//
-//        // so we may access the headerComposer outside of this scope if we need to; for example accessing its `isSticky` property
+
+        // so we may access the headerComposer outside of this scope if we need to; for example accessing its `isSticky` property
         headerComposer = composedProvider
         // set the `provider` to be newly created `composedProvider`
         provider = composedProvider
