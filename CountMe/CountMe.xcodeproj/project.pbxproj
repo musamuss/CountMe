@@ -26,6 +26,7 @@
 		5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */; };
 		5B1349EB226F7DE9002CE3D1 /* AddAccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */; };
 		5B1349EC226F7DE9002CE3D1 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */; };
+		5B210E4F2295A83A00A9E2CE /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B210E4E2295A83A00A9E2CE /* NavController.swift */; };
 		5BD270EB227F67EC002C1A28 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E6227F67EC002C1A28 /* AuthViewController.swift */; };
 		5BD270EC227F67EC002C1A28 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E7227F67EC002C1A28 /* ProfileHeader.swift */; };
 		5BD270ED227F67EC002C1A28 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD270E8227F67EC002C1A28 /* ProfileViewController.swift */; };
@@ -58,6 +59,7 @@
 		5B1349E6226F7DE1002CE3D1 /* AddAccountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountPresenter.swift; sourceTree = "<group>"; };
 		5B1349E7226F7DE1002CE3D1 /* AddAccountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountInteractor.swift; sourceTree = "<group>"; };
 		5B1349E8226F7DE1002CE3D1 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		5B210E4E2295A83A00A9E2CE /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		5BD270E6227F67EC002C1A28 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		5BD270E7227F67EC002C1A28 /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		5BD270E8227F67EC002C1A28 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				5BD270E6227F67EC002C1A28 /* AuthViewController.swift */,
 				5BD270E7227F67EC002C1A28 /* ProfileHeader.swift */,
 				5BD270E8227F67EC002C1A28 /* ProfileViewController.swift */,
+				5B210E4E2295A83A00A9E2CE /* NavController.swift */,
 				5BD270E9227F67EC002C1A28 /* CollectionViewController.swift */,
 				5BD270EA227F67EC002C1A28 /* ImageCell.swift */,
 			);
@@ -321,6 +324,7 @@
 				5B1349EA226F7DE9002CE3D1 /* AddAccountPresenter.swift in Sources */,
 				5B1349D1226F7B2B002CE3D1 /* AppExtensions.swift in Sources */,
 				5BD270EE227F67EC002C1A28 /* CollectionViewController.swift in Sources */,
+				5B210E4F2295A83A00A9E2CE /* NavController.swift in Sources */,
 				5BD270EF227F67EC002C1A28 /* ImageCell.swift in Sources */,
 				451051CA226A0C86009318B2 /* AppDelegate.swift in Sources */,
 				5B1349D8226F7C36002CE3D1 /* InstagramMedia.swift in Sources */,

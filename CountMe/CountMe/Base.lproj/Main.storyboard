@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VYO-yd-usi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYO-yd-usi">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Counter-->
         <scene sceneID="2mS-56-ayA">
             <objects>
-                <navigationController title="Counter" id="6EW-JN-eX0" sceneMemberID="viewController">
+                <navigationController title="Counter" id="6EW-JN-eX0" customClass="NavController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Stats" image="line-chart-graph" id="M7V-Ax-mmJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6BB-eO-bd3">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -29,7 +30,8 @@
         <!--My Account-->
         <scene sceneID="dCb-on-qB8">
             <objects>
-                <navigationController id="QEa-kh-1gJ" sceneMemberID="viewController">
+                <navigationController id="QEa-kh-1gJ" customClass="NavController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="My Account" image="icons8-Male User Filled_30" id="HGw-lP-OoR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eBN-Kc-6l1">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -47,15 +49,13 @@
         <scene sceneID="RUE-54-4kQ">
             <objects>
                 <viewController id="ovZ-Ko-5y6" customClass="ProfileViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="K9c-1Z-ddX"/>
-                        <viewControllerLayoutGuide type="bottom" id="A4H-4H-cg1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Wb-rh-aUx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="0Wb-rh-aUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0VD-ma-q6C"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="cpX-Ky-SVJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV8-0A-dvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -85,7 +85,7 @@
             <objects>
                 <tableViewController id="xwD-e2-JY2" customClass="InsightsViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gsd-8G-CuO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="jpq-cl-e2R" userLabel="Header">
@@ -189,6 +189,7 @@
                             <outlet property="delegate" destination="xwD-e2-JY2" id="T6S-CZ-DBs"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="p1R-Yc-Q8W"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="d5a-mh-CyY">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -304,10 +305,6 @@
         <scene sceneID="4Se-zx-4NH">
             <objects>
                 <viewController storyboardIdentifier="AddAccountViewController" title="Account" hidesBottomBarWhenPushed="YES" id="FQt-a7-1Ut" customClass="AddAccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eiI-02-Wr3"/>
-                        <viewControllerLayoutGuide type="bottom" id="WFq-R1-fYo"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bfa-7z-eyu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,11 +393,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="leading" secondItem="Bfa-7z-eyu" secondAttribute="leading" id="06c-pc-Uv2"/>
-                            <constraint firstAttribute="trailing" secondItem="Bsf-sP-6y6" secondAttribute="trailing" id="8PQ-Mo-Tss"/>
-                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="top" secondItem="eiI-02-Wr3" secondAttribute="bottom" id="Ud3-o1-VTX"/>
-                            <constraint firstItem="WFq-R1-fYo" firstAttribute="top" secondItem="Bsf-sP-6y6" secondAttribute="bottom" id="zxe-t8-4i3"/>
+                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="leading" secondItem="snr-9r-0lQ" secondAttribute="leading" id="06c-pc-Uv2"/>
+                            <constraint firstItem="snr-9r-0lQ" firstAttribute="trailing" secondItem="Bsf-sP-6y6" secondAttribute="trailing" id="8PQ-Mo-Tss"/>
+                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="top" secondItem="snr-9r-0lQ" secondAttribute="top" id="Ud3-o1-VTX"/>
+                            <constraint firstItem="snr-9r-0lQ" firstAttribute="bottom" secondItem="Bsf-sP-6y6" secondAttribute="bottom" id="zxe-t8-4i3"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="snr-9r-0lQ"/>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>

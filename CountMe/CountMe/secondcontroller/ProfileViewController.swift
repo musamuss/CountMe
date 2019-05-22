@@ -64,7 +64,7 @@ class ProfileViewController: CollectionViewController {
     }
     func fetchData() {
         fetchCurrentUser()
-        fetchCurrentMedia(count: 20) // 20 seems to be the limit
+        fetchCurrentMedia(count: 30) // 20 seems to be the limit
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,6 +86,7 @@ class ProfileViewController: CollectionViewController {
         navigationItem.setLeftBarButton(changeCountTypeBarButtonItem, animated: false)
         // нужно добавить refreshBarButtonItem после logOutBarButtonItem
         navigationItem.setRightBarButtonItems([logOutBarButtonItem], animated: false)
+        
     }
     
     fileprivate func setupNotificationCenterObservers() {
