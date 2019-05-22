@@ -29,12 +29,12 @@ class AppConfiguration {
         static let deleteAllButton = NSLocalizedString("Delete All", comment: "")
         static let somethingWrongMessage = NSLocalizedString("Something went wrong", comment: "")
         static let privateAccountMessage = NSLocalizedString("This account is private", comment: "")
-        static let reportsCompletedTitle = NSLocalizedString("Reports Completed", comment: "")
+        static let reportsCompletedTitle = NSLocalizedString("Report Completed", comment: "")
         static let reportsCompletedMessage = NSLocalizedString("Please go back to the start screen", comment: "")
         
         //стделать тригер на экшон reportsCompletedMessage для перехода на старт скрин
-        static let deleteReportsTitle = NSLocalizedString("Delete Reports", comment: "")
-        static let deleteReportsMessage = NSLocalizedString("Remove my account and delete all the reports", comment: "")
+        static let deleteReportsTitle = NSLocalizedString("Delete Report", comment: "")
+        static let deleteReportsMessage = NSLocalizedString("Remove account and delete the report", comment: "")
     }
     
 }
