@@ -24,11 +24,16 @@ class CollectionViewController: UIViewController {
         view.addSubview(collectionView)
         collectionView.animator = FadeAnimator()
         
+
+        
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
+        
+       collectionView.alwaysBounceVertical = true;
     }
+   
 }
 

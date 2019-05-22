@@ -18,7 +18,7 @@ let notificationNameReloadNavBarUI = Notification.Name(rawValue: "reloadNavBarUI
 enum CountType {
     case likes, comments
 }
-
+let refreshControl = UIRefreshControl()
 var countType: CountType = .likes
 
 class ProfileViewController: CollectionViewController {
@@ -52,10 +52,16 @@ class ProfileViewController: CollectionViewController {
         
         setupNotificationCenterObservers()
         setupProvider()
-        
         fetchData()
+        refreshdata()
+                    }
+    // MARK: -
+    // MARK: ебучая тянужка обновления
+    func refreshdata(){
+        collectionView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(handleRefreshBarButtonItemTapped), for: .valueChanged)
+        
     }
-    
     func fetchData() {
         fetchCurrentUser()
         fetchCurrentMedia(count: 20) // 20 seems to be the limit
@@ -209,6 +215,7 @@ class ProfileViewController: CollectionViewController {
 //        collectionView.reloadData()
         
         fetchData()
+        refreshControl.endRefreshing()
     }
     
     @objc fileprivate func handleLogoutBarButtonItemTapped() {
