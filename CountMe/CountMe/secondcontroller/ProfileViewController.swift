@@ -86,6 +86,7 @@ class ProfileViewController: CollectionViewController {
         navigationItem.setLeftBarButton(changeCountTypeBarButtonItem, animated: false)
         // нужно добавить refreshBarButtonItem после logOutBarButtonItem
         navigationItem.setRightBarButtonItems([logOutBarButtonItem], animated: false)
+
         
     }
     

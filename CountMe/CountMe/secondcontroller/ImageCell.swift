@@ -54,6 +54,9 @@ class ImageCell: UIView {
         label.font = UIFont.boldSystemFont(ofSize: 36)
         label.textColor = UIColor(white: 1.0, alpha: 1)
         label.shadowColor = .black
+        label.backgroundColor = UIColor(white: 0.6, alpha: 0.8)
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 20.0
         return label
     }()
     

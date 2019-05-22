@@ -174,7 +174,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" id="jHK-qR-tCP">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZEv-sR-kz0">
-                                <rect key="frame" x="309" y="0.0" width="40" height="40"/>
+                                <rect key="frame" x="319" y="2" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="user-icon"/>
                                 <connections>
