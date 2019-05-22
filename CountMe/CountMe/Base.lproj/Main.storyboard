@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYO-yd-usi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VYO-yd-usi">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -48,11 +47,14 @@
         <scene sceneID="RUE-54-4kQ">
             <objects>
                 <viewController id="ovZ-Ko-5y6" customClass="ProfileViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K9c-1Z-ddX"/>
+                        <viewControllerLayoutGuide type="bottom" id="A4H-4H-cg1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Wb-rh-aUx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="PJV-Km-Pex"/>
                     </view>
                     <navigationItem key="navigationItem" id="cpX-Ky-SVJ"/>
                 </viewController>
@@ -235,14 +237,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Account name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K8D-J3-rwo">
-                                                    <rect key="frame" x="101" y="0.0" width="239" height="69.666666666666671"/>
+                                                    <rect key="frame" x="81" y="0.0" width="259" height="69.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="user-icon" id="l0c-eS-N8Y">
-                                                    <rect key="frame" x="16" y="0.0" width="70" height="69.666666666666671"/>
+                                                    <rect key="frame" x="16" y="9" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -302,6 +304,10 @@
         <scene sceneID="4Se-zx-4NH">
             <objects>
                 <viewController storyboardIdentifier="AddAccountViewController" title="Account" hidesBottomBarWhenPushed="YES" id="FQt-a7-1Ut" customClass="AddAccountViewController" customModule="CountMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eiI-02-Wr3"/>
+                        <viewControllerLayoutGuide type="bottom" id="WFq-R1-fYo"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bfa-7z-eyu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,12 +396,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="leading" secondItem="yOe-X1-QN7" secondAttribute="leading" id="06c-pc-Uv2"/>
-                            <constraint firstItem="yOe-X1-QN7" firstAttribute="trailing" secondItem="Bsf-sP-6y6" secondAttribute="trailing" id="8PQ-Mo-Tss"/>
-                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="top" secondItem="yOe-X1-QN7" secondAttribute="top" id="Ud3-o1-VTX"/>
-                            <constraint firstItem="yOe-X1-QN7" firstAttribute="bottom" secondItem="Bsf-sP-6y6" secondAttribute="bottom" id="zxe-t8-4i3"/>
+                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="leading" secondItem="Bfa-7z-eyu" secondAttribute="leading" id="06c-pc-Uv2"/>
+                            <constraint firstAttribute="trailing" secondItem="Bsf-sP-6y6" secondAttribute="trailing" id="8PQ-Mo-Tss"/>
+                            <constraint firstItem="Bsf-sP-6y6" firstAttribute="top" secondItem="eiI-02-Wr3" secondAttribute="bottom" id="Ud3-o1-VTX"/>
+                            <constraint firstItem="WFq-R1-fYo" firstAttribute="top" secondItem="Bsf-sP-6y6" secondAttribute="bottom" id="zxe-t8-4i3"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="yOe-X1-QN7"/>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -408,8 +413,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-Male User Filled_30" width="60" height="60"/>
-        <image name="line-chart-graph" width="60" height="60"/>
-        <image name="user-icon" width="100" height="100"/>
+        <image name="icons8-Male User Filled_30" width="30" height="30"/>
+        <image name="line-chart-graph" width="30" height="30"/>
+        <image name="user-icon" width="50" height="50"/>
     </resources>
 </document>

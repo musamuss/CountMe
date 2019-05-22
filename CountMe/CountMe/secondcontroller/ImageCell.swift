@@ -53,6 +53,7 @@ class ImageCell: UIView {
         var label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 36)
         label.textColor = UIColor(white: 1.0, alpha: 1)
+        label.shadowColor = .black
         return label
     }()
     
@@ -81,12 +82,12 @@ class ImageCell: UIView {
         }
         
         task.resume()
-       //Цифры на фотках показывающие лайки и комменты
-//        if countType == .likes {
-//            countLabel.text = String(instagramMedia.likes.count)
-//        } else {
-//            countLabel.text = String(instagramMedia.comments.count)
-//        }
+ //      Цифры на фотках показывающие лайки и комменты
+        if countType == .likes {
+            countLabel.text = String(instagramMedia.likes.count)
+        } else {
+            countLabel.text = String(instagramMedia.comments.count)
+        }
         
         
     }
