@@ -43,7 +43,6 @@ class InsightsViewController: UITableViewController, InsightsViewDisplayLogic {
         super.viewDidLoad()
         setupUI()
         fetchMediaOnload()
-        
     }
     
     // MARK: - SetupUI
@@ -54,7 +53,9 @@ class InsightsViewController: UITableViewController, InsightsViewDisplayLogic {
         tableView.estimatedRowHeight = 200
         tableView.separatorStyle = .none
         self.footerView?.isHidden = true
+        
     }
+    
     
     // MARK: - Fetch Media
     
